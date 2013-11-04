@@ -1,1 +1,61 @@
-My Page
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>CSS Transforms in an interactive way</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/jquery.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <section id='scale'></section>
+  <section id='skew' class='transform-rule transform-rule--skew'>
+    <div class='transform-rule-code'>
+      <h2 class='transform-rule-code-label'>CSS</h2>
+      <code>
+        <pre>
+<span class='code-selector'>#imagem</span> {
+  <span class='code-rule'>transform</span>: <span class='code-rule-value'>scale(<span class='code-rule-value-scale-x'>1.00</span>, <span class='code-rule-value-scale-y'>1.00</span>)</span>;
+}
+        </pre>
+      </code>
+    </div>
+    <div class='transform-rule-controls'>
+      <h2 class="transform-rule-controls-label">Controls</h2>
+      <label class='transform-rule-slider-label transform-rule-slider-X'>
+        Scale X
+        <input
+          class='transform-rule-slider'
+          type='range'
+          value='1000'
+          min='-1500'
+          max='1500'
+        />
+      </label>
+      <label class='transform-rule-slider-label transform-rule-slider-Y'>
+        Scale Y
+        <input
+          class='transform-rule-slider'
+          type='range'
+          value='1000'
+          min='-1500'
+          max='1500'
+        />
+      </label>
+    </div>
+    <div class='transform-rule-stage'>
+      <h2 class="transform-rule-stage-label">Transform Scale</h2>
+      <img
+        class="transform-rule-img-reference"
+        src="img/rio.jpg"
+        alt="Rio de Janeiro"
+      />
+      <img
+        class="transform-rule-img-transformed"
+        src="img/rio.jpg"
+        alt="Rio de Janeiro"
+      />
+    </div>
+  </section>
+</body>
+</html>
