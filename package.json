@@ -1,0 +1,27 @@
+{
+  "name": "css-transform-interactive",
+  "version": "0.0.1",
+  "description": "Learn CSS Transforms in a more fun and interactive way",
+  "main": "index.html",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/caiogondim/css-transform-interactive.git"
+  },
+  "keywords": [
+    "css",
+    "transforms"
+  ],
+  "author": "Caio Gondim",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/caiogondim/css-transform-interactive/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
