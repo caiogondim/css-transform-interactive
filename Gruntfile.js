@@ -5,6 +5,7 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.initConfig({
     sass: {
@@ -17,6 +18,10 @@ module.exports = function (grunt) {
         }
       }
     },
+    jshint: {
+      files: ['./script/*.js'],
+      options: grunt.file.readJSON('.jshintrc')
+    },
     watch: {
       sass: {
         files: ['styles/*.scss'],
@@ -24,5 +29,7 @@ module.exports = function (grunt) {
       }
     }
   });
+
+  grunt.registerTask('test', ['jshint']);
 
 };
