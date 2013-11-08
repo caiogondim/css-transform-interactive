@@ -6,10 +6,10 @@ var main = {};
   'use strict';
 
   main.init = function () {
-    this.bindListeners();
+    this.bindEventListeners();
   }
 
-  main.bindListeners = function () {
+  main.bindEventListeners = function () {
     $('.transform-rule-slider-label input').on(
       'change',
       main.handleScaleValueChange
