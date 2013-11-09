@@ -10,14 +10,19 @@ var main = {};
   }
 
   main.bindEventListeners = function () {
-    $('.transform-rule-slider-label input').on(
+    $('#scale input[type=range]').on(
       'change',
       main.handleScaleValueChange
     )
 
     $('#rotate .transform-rule-slider').on(
       'change',
-      main.handleRotateValueChange
+      this.handleRotateValueChange
+    )
+
+    $('#skew input[type=range]').on(
+      'change',
+      this.handleSkewValueChange
     )
   }
 
@@ -25,13 +30,13 @@ var main = {};
   // --------------
 
   main.handleScaleValueChange = function () {
-    var scaleX = ($('.transform-rule-slider-X input').val() / 1000).toFixed(2)
-    var scaleY = ($('.transform-rule-slider-Y input').val() / 1000).toFixed(2)
+    var scaleX = ($('#scale .transform-rule-slider-x').val() / 1000).toFixed(2)
+    var scaleY = ($('#scale .transform-rule-slider-y').val() / 1000).toFixed(2)
 
-    $('.code-rule-value-scale-x').html(scaleX)
-    $('.code-rule-value-scale-y').html(scaleY)
+    $('#scale .code-rule-value-scale-x').html(scaleX)
+    $('#scale .code-rule-value-scale-y').html(scaleY)
 
-    $('.transform-rule-img-transformed').css(
+    $('#scale .transform-rule-img-transformed').css(
       '-webkit-transform',
       'scale(' + scaleX + ', ' + scaleY + ')'
     )
@@ -45,6 +50,19 @@ var main = {};
     $('#rotate .transform-rule-img-transformed').css(
       '-webkit-transform',
       'rotate(' + rotation + 'deg)'
+    )
+  }
+
+  main.handleSkewValueChange = function () {
+    var skewX = parseFloat($('#skew .transform-rule-slider-x').val())
+    var skewY = parseFloat($('#skew .transform-rule-slider-y').val())
+
+    $('#skew .code-rule-value-skew-x').html(skewX + 'deg')
+    $('#skew .code-rule-value-skew-y').html(skewY + 'deg')
+
+    $('#skew .transform-rule-img-transformed').css(
+      '-webkit-transform',
+      'skew(' + skewX + 'deg, ' + skewY + 'deg)'
     )
   }
 

@@ -14,7 +14,7 @@ module.exports = function (grunt) {
           style: 'compressed'
         },
         files: {
-          'styles/main.css': 'styles/main.scss'
+          'style/main.css': 'style/main.scss'
         }
       }
     },
@@ -25,7 +25,10 @@ module.exports = function (grunt) {
     watch: {
       sass: {
         files: ['style/*.scss'],
-        tasks: ['sass']
+        tasks: ['sass'],
+        options: {
+          livereload: true
+        }
       }
     }
   });

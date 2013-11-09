@@ -37,7 +37,11 @@ code pre * {
 #scale {
   width: 700px;
   height: 432px;
-  background-color: green;
+}
+
+#skew {
+  width: 700px;
+  height: 432px;
 }
 
 .transform-rule {
@@ -98,6 +102,11 @@ code pre * {
   font-size: 18px;
 }
 
+.transform-rule-slider-label--first-of-two {
+  @extend .transform-rule-slider-label;
+  margin-top: 40px;
+}
+
 .transform-rule-slider {
   -webkit-appearance: none;
   height: 2px;
@@ -107,11 +116,13 @@ code pre * {
   outline: none;
 }
 
-.transform-rule-slider-X {
-  margin-top: 40px;
+.transform-rule-slider-x {
+  @extend .transform-rule-slider;
+  margin-top: 10px;
 }
 
-.transform-rule-slider-Y {
+.transform-rule-slider-y {
+  @extend .transform-rule-slider;
   margin-top: 10px;
 }
 
