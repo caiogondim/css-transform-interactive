@@ -7,13 +7,14 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-jshint')
   grunt.loadNpmTasks('grunt-contrib-connect')
+  grunt.loadNpmTasks('grunt-contrib-csslint')
   grunt.loadNpmTasks('grunt-concurrent')
 
   grunt.initConfig({
     sass: {
       default: {
         options: {
-          style: 'compressed'
+          style: 'nested'
         },
         files: {
           'style/main.css': 'style/main.scss'
@@ -23,6 +24,14 @@ module.exports = function (grunt) {
     jshint: {
       files: ['./script/*.js'],
       options: grunt.file.readJSON('.jshintrc')
+    },
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
+      default: {
+        src: ['./style/*.css']
+      }
     },
     connect: {
       default: {
@@ -49,6 +58,6 @@ module.exports = function (grunt) {
     }
   })
 
-  grunt.registerTask('test', ['jshint'])
+  grunt.registerTask('test', ['jshint', 'csslint'])
   grunt.registerTask('run', ['concurrent:default'])
 }

@@ -17,9 +17,9 @@ code pre {
   line-height: 150%;
 }
 
-code pre * {
+code pre {
   font-family: 'Monaco';
-  display: inline !important;
+  display: inline;
 }
 
 .code-selector {
@@ -32,16 +32,6 @@ code pre * {
 
 .code-rule-value {
   color: #FCA369;
-}
-
-#scale {
-  width: 700px;
-  height: 432px;
-}
-
-#skew {
-  width: 700px;
-  height: 432px;
 }
 
 .transform-rule {
@@ -109,11 +99,15 @@ code pre * {
 
 .transform-rule-slider {
   -webkit-appearance: none;
+  -moz-appearance: none;
   height: 2px;
   width: 260px;
   background-color: #A9A9A9;
   margin: 10px 0 30px 0;
-  outline: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .transform-rule-slider-x {
@@ -127,7 +121,8 @@ code pre * {
 }
 
 .transform-rule-slider::-webkit-slider-thumb {
-  -webkit-appearance: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: #646464;
   width: 25px;
   height: 25px;
@@ -139,15 +134,11 @@ code pre * {
 }
 
 @media (max-width: 2700px) and (min-width: 700px) {
-  body * {
+  .transform-rule {
     display: none;
   }
 
   :target {
-    display: block !important;
-  }
-
-  :target * {
     display: block;
   }
 }

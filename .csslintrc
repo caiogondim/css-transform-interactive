@@ -1,0 +1,6 @@
+{
+  "box-model": false,
+  "box-sizing": false,
+  "universal-selector": false,
+  "outline-none": false
+}
