@@ -26,9 +26,7 @@ module.exports = function (grunt) {
       options: grunt.file.readJSON('.jshintrc')
     },
     csslint: {
-      options: {
-        csslintrc: '.csslintrc'
-      },
+      options: grunt.file.readJSON('.csslintrc'),
       default: {
         src: ['./style/*.css']
       }

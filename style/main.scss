@@ -10,7 +10,7 @@
 
 code pre {
   font-family: 'Monaco';
-  font-size: 14px;
+  font-size: 13px;
   color: #D5D5D5;
   position: absolute;
   top: 70px;
@@ -91,6 +91,7 @@ code pre span {
 .transform-rule-slider-label {
   color: #D6ACD6;
   font-size: 18px;
+  display: inline-block;
 }
 
 .transform-rule-slider-label--first-of-two {
