@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light'; }
 
-/* Code ----------------------------------------------------------------- */
 code pre {
   font-family: 'Monaco';
   font-size: 14px;
@@ -13,7 +12,7 @@ code pre {
   top: 70px;
   line-height: 150%; }
 
-code pre {
+code pre span {
   font-family: 'Monaco';
   display: inline; }
 
@@ -30,7 +29,8 @@ code pre {
   width: 700px;
   height: 432px;
   background-color: #646464;
-  position: relative; }
+  position: relative;
+  margin-bottom: 20px; }
 
 .transform-rule-code {
   background-color: #3B3B3B;
@@ -49,7 +49,6 @@ code pre {
 .transform-rule--rotate .transform-rule-slider-label, .transform-rule--rotate .transform-rule-slider-label--first-of-two {
   margin-top: 70px; }
 
-/* Controls ------------------------------------------------------------- */
 .transform-rule-controls {
   background-color: #494949;
   width: 300px;
@@ -98,13 +97,6 @@ code pre {
 .transform-rule-slider:focus::-webkit-slider-thumb, .transform-rule-slider-x:focus::-webkit-slider-thumb, .transform-rule-slider-y:focus::-webkit-slider-thumb {
   background-color: #D6ACD6; }
 
-@media (max-width: 2700px) and (min-width: 700px) {
-  .transform-rule {
-    display: none; }
-
-  :target {
-    display: block; } }
-/* Stage ----------------------------------------------------------------- */
 .transform-rule-stage {
   height: 700px;
   width: 400px;

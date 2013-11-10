@@ -10,6 +10,11 @@ var main = {};
   }
 
   main.bindEventListeners = function () {
+    $('#translate input[type=range]').on(
+      'change',
+      main.handleTranslateValueChange
+    )
+
     $('#scale input[type=range]').on(
       'change',
       main.handleScaleValueChange
@@ -28,6 +33,19 @@ var main = {};
 
   // Event handlers
   // --------------
+
+  main.handleTranslateValueChange = function () {
+    var translateX = $('#translate .transform-rule-slider-x').val()
+    var translateY = $('#translate .transform-rule-slider-y').val()
+
+    $('#translate .code-rule-value-translate-x').html(translateX)
+    $('#translate .code-rule-value-translate-y').html(translateY)
+
+    $('#translate .transform-rule-img-transformed').css(
+      '-webkit-transform',
+      'translate(' + translateX + 'px, ' + translateY + 'px)'
+    )
+  }
 
   main.handleScaleValueChange = function () {
     var scaleX = ($('#scale .transform-rule-slider-x').val() / 1000).toFixed(2)

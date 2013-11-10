@@ -9,6 +9,55 @@
 </head>
 <body>
 
+  <section id='translate' class='transform-rule'>
+    <div class='transform-rule-code'>
+      <h2 class='transform-rule-code-label'>CSS</h2>
+        <code>
+          <pre>
+<span class='code-selector'>#imagem</span> {
+  <span class='code-rule'>transform</span>: <span class='code-rule-value'>translate(<span class='code-rule-value-translate-x'>0</span>px, <span class='code-rule-value-translate-y'>0</span>px)</span>;
+}
+          </pre>
+        </code>
+    </div>
+    <div class='transform-rule-controls'>
+      <h2 class='transform-rule-controls-label'>Controls</h2>
+      <label class='transform-rule-slider-label--first-of-two'>
+        Translate X
+        <input
+          class='transform-rule-slider-x'
+          type='range'
+          value='0'
+          min='-60'
+          max='60'
+        />
+      </label>
+      <label class='transform-rule-slider-label'>
+        Translate Y
+        <input
+          class='transform-rule-slider-y'
+          type='range'
+          value='0'
+          min='-60'
+          max='60'
+        />
+      </label>
+    </div>
+    <div class='transform-rule-stage'>
+      <h2 class='transform-rule-stage-label'>Transform Translate</h2>
+      <img
+        class='transform-rule-img-reference'
+        src='img/rio.jpg'
+        alt='Rio de Janeiro'
+      />
+      <img
+        class='transform-rule-img-transformed'
+        src='img/rio.jpg'
+        alt='Rio de Janeiro'
+      />
+    </div>
+  </section>
+
   <section id='skew' class='transform-rule'>
     <div class='transform-rule-code'>
       <h2 class='transform-rule-code-label'>CSS</h2>

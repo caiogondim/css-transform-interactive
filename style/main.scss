@@ -6,7 +6,7 @@
 }
 
 
-/* Code ----------------------------------------------------------------- */
+// Code ------------------------------------------------------------------------
 
 code pre {
   font-family: 'Monaco';
@@ -17,7 +17,7 @@ code pre {
   line-height: 150%;
 }
 
-code pre {
+code pre span {
   font-family: 'Monaco';
   display: inline;
 }
@@ -39,6 +39,7 @@ code pre {
   height: 432px;
   background-color: #646464;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .transform-rule-code {
@@ -69,7 +70,7 @@ code pre {
 }
 
 
-/* Controls ------------------------------------------------------------- */
+// Controls --------------------------------------------------------------------
 
 .transform-rule-controls {
   background-color: #494949;
@@ -134,17 +135,17 @@ code pre {
 }
 
 @media (max-width: 2700px) and (min-width: 700px) {
-  .transform-rule {
-    display: none;
-  }
+  // .transform-rule {
+  //   display: none;
+  // }
 
-  :target {
-    display: block;
-  }
+  // :target {
+  //   display: block;
+  // }
 }
 
 
-/* Stage ----------------------------------------------------------------- */
+// Stage -----------------------------------------------------------------------
 
 .transform-rule-stage {
   height: 700px;
