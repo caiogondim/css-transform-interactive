@@ -3,5 +3,10 @@
   height: 432px;
   position: relative;
   overflow: hidden;
-  margin: 0 0 20px 0;
+  display: none;
+
+  &:target {
+    display: block;
+  }
 }
+

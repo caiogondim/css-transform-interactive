@@ -3,7 +3,9 @@
   height: 432px;
   position: relative;
   overflow: hidden;
-  margin: 0 0 20px 0; }
+  display: none; }
+  .experiment:target {
+    display: block; }
 
 .experiment__code {
   background-color: #3B3B3B;
@@ -75,9 +77,14 @@
   height: 2px;
   width: 260px;
   background-color: #A9A9A9;
-  margin: 10px 0 30px 0; }
+  margin: 10px 0 30px 0;
+  cursor: -webkit-grab;
+  cursor: -moz-grab; }
   .experiment__controls__slider:focus {
     outline: none; }
+  .experiment__controls__slider:active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing; }
   .experiment__controls__slider::-webkit-slider-thumb, .experiment__controls__slider.axis-x::-webkit-slider-thumb, .experiment__controls__slider.y-axis::-webkit-slider-thumb {
     -webkit-appearance: none;
     -moz-appearance: none;
