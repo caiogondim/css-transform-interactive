@@ -9,33 +9,33 @@
 </head>
 <body>
 
-  <section id='translate' class='transform-rule'>
-    <div class='transform-rule-code'>
-      <h2 class='transform-rule-code-label'>CSS</h2>
+  <section class='experiment' id='translate'>
+    <div class='experiment__code'>
+      <h2 class='experiment__code__label'>CSS</h2>
         <code>
           <pre>
-<span class='code-selector'>#imagem</span> {
- <span class='code-rule'>transform</span>: <span class='code-rule-value'>translate(<span class='code-rule-value-translate-x'>0</span>px,<span class='code-rule-value-translate-y'>0</span>px)</span>;
+<span class='experiment__code__selector'>#imagem</span> {
+ <span class='experiment__code__rule'>transform</span>: <span class='experiment__code__rule-value'>translate(<span class='experiment__code__rule-value-translate-x'>0</span>px,<span class='experiment__code__rule-value-translate-y'>0</span>px)</span>;
 }
           </pre>
         </code>
     </div>
-    <div class='transform-rule-controls'>
-      <h2 class='transform-rule-controls-label'>Controls</h2>
-      <label class='transform-rule-slider-label--first-of-two'>
+    <div class='experiment__controls'>
+      <h2 class='experiment__controls__label'>Controls</h2>
+      <label class='experiment__controls__slider-label first-of-two'>
         Translate X
         <input
-          class='transform-rule-slider-x'
+          class='experiment__controls__slider axis-x'
           type='range'
           value='0'
           min='-60'
           max='60'
         />
       </label>
-      <label class='transform-rule-slider-label'>
+      <label class='experiment__controls__slider-label'>
         Translate Y
         <input
-          class='transform-rule-slider-y'
+          class='experiment__controls__slider axis-y'
           type='range'
           value='0'
           min='-60'
@@ -43,48 +43,48 @@
         />
       </label>
     </div>
-    <div class='transform-rule-stage'>
-      <h2 class='transform-rule-stage-label'>Transform Translate</h2>
+    <div class='experiment__stage'>
+      <h2 class='experiment__stage__label'>Transform Translate</h2>
       <img
-        class='transform-rule-img-reference'
+        class='experiment__stage__img-reference'
         src='img/rio.jpg'
         alt='Rio de Janeiro'
       />
       <img
-        class='transform-rule-img-transformed'
+        class='experiment__stage__img-transformed'
         src='img/rio.jpg'
         alt='Rio de Janeiro'
       />
     </div>
   </section>
 
-  <section id='skew' class='transform-rule'>
-    <div class='transform-rule-code'>
-      <h2 class='transform-rule-code-label'>CSS</h2>
+  <section class='experiment' id='skew'>
+    <div class='experiment__code'>
+      <h2 class='experiment__code__label'>CSS</h2>
         <code>
           <pre>
-<span class='code-selector'>#imagem</span> {
-  <span class='code-rule'>transform</span>: <span class='code-rule-value'>skew(<span class='code-rule-value-skew-x'>1.00</span>, <span class='code-rule-value-skew-y'>1.00</span>)</span>;
+<span class='experiment__code__selector'>#imagem</span> {
+  <span class='experiment__code__rule'>transform</span>: <span class='experiment__code__rule-value'>skew(<span class='experiment__code__rule-value-skew-x'>1.00</span>, <span class='experiment__code__rule-value-skew-y'>1.00</span>)</span>;
 }
           </pre>
         </code>
     </div>
-    <div class='transform-rule-controls'>
-      <h2 class='transform-rule-controls-label'>Controls</h2>
-      <label class='transform-rule-slider-label--first-of-two'>
+    <div class='experiment__controls'>
+      <h2 class='experiment__controls__label'>Controls</h2>
+      <label class='experiment__controls__slider-label first-of-two'>
         Skew X
         <input
-          class='transform-rule-slider-x'
+          class='experiment__controls__slider axis-x'
           type='range'
           value='0'
           min='-30'
           max='30'
         />
       </label>
-      <label class='transform-rule-slider-label'>
+      <label class='experiment__controls__slider-label'>
         Skew Y
         <input
-          class='transform-rule-slider-y'
+          class='experiment__controls__slider axis-y'
           type='range'
           value='0'
           min='-30'
@@ -92,38 +92,38 @@
         />
       </label>
     </div>
-    <div class='transform-rule-stage'>
-      <h2 class='transform-rule-stage-label'>Transform Skew</h2>
+    <div class='experiment__stage'>
+      <h2 class='experiment__stage__label'>Transform Skew</h2>
       <img
-        class='transform-rule-img-reference'
+        class='experiment__stage__img-reference'
         src='img/rio.jpg'
         alt='Rio de Janeiro'
       />
       <img
-        class='transform-rule-img-transformed'
+        class='experiment__stage__img-transformed'
         src='img/rio.jpg'
         alt='Rio de Janeiro'
       />
     </div>
   </section>
 
-  <section class='transform-rule transform-rule--rotate' id='rotate'>
-    <div class='transform-rule-code'>
-      <h2 class='transform-rule-code-label'>CSS</h2>
+  <section class='experiment' id='rotate'>
+    <div class='experiment__code'>
+      <h2 class='experiment__code__label'>CSS</h2>
       <code>
         <pre>
-<span class='code-selector'>#imagem</span> {
-  <span class='code-rule'>transform</span>: <span class='code-rule-value'>rotate(<span class='code-rule-value-rotation'>0.00</span>deg)</span>;
+<span class='experiment__code__selector'>#imagem</span> {
+  <span class='experiment__code__rule'>transform</span>: <span class='experiment__code__rule-value'>rotate(<span class='experiment__code__rule-value-rotation'>0.00</span>deg)</span>;
 }
         </pre>
       </code>
     </div>
-    <div class='transform-rule-controls'>
-      <h2 class='transform-rule-controls-label'>Controls</h2>
-      <label class='transform-rule-slider-label'>
+    <div class='experiment__controls'>
+      <h2 class='experiment__controls__label'>Controls</h2>
+      <label class='experiment__controls__slider-label unique'>
         Rotate
         <input
-          class='transform-rule-slider'
+          class='experiment__controls__slider'
           type='range'
           value='0'
           min='-360'
@@ -131,48 +131,48 @@
         />
       </label>
     </div>
-    <div class='transform-rule-stage'>
-      <h2 class='transform-rule-stage-label'>Transform Rotate</h2>
+    <div class='experiment__stage'>
+      <h2 class='experiment__stage__label'>Transform Rotate</h2>
       <img
-        class='transform-rule-img-reference'
+        class='experiment__stage__img-reference'
         src='img/rio.jpg'
         alt='Rio de Janeiro'
       />
       <img
-        class='transform-rule-img-transformed'
+        class='experiment__stage__img-transformed'
         src='img/rio.jpg'
         alt='Rio de Janeiro'
       />
     </div>
   </section>
 
-  <section id='scale' class='transform-rule transform-rule--scale'>
-    <div class='transform-rule-code'>
-      <h2 class='transform-rule-code-label'>CSS</h2>
+  <section class='experiment' id='scale'>
+    <div class='experiment__code'>
+      <h2 class='experiment__code__label'>CSS</h2>
       <code>
         <pre>
-<span class='code-selector'>#imagem</span> {
-  <span class='code-rule'>transform</span>: <span class='code-rule-value'>scale(<span class='code-rule-value-scale-x'>1.00</span>, <span class='code-rule-value-scale-y'>1.00</span>)</span>;
+<span class='experiment__code__selector'>#imagem</span> {
+  <span class='experiment__code__rule'>transform</span>: <span class='experiment__code__rule-value'>scale(<span class='experiment__code__rule-value-scale-x'>1.00</span>, <span class='experiment__code__rule-value-scale-y'>1.00</span>)</span>;
 }
         </pre>
       </code>
     </div>
-    <div class='transform-rule-controls'>
-      <h2 class='transform-rule-controls-label'>Controls</h2>
-      <label class='transform-rule-slider-label--first-of-two'>
+    <div class='experiment__controls'>
+      <h2 class='experiment__controls__label'>Controls</h2>
+      <label class='experiment__controls__slider-label first-of-two'>
         Scale X
         <input
-          class='transform-rule-slider-x'
+          class='experiment__controls__slider axis-x'
           type='range'
           value='1000'
           min='-1500'
           max='1500'
         />
       </label>
-      <label class='transform-rule-slider-label'>
+      <label class='experiment__controls__slider-label'>
         Scale Y
         <input
-          class='transform-rule-slider-y'
+          class='experiment__controls__slider axis-y'
           type='range'
           value='1000'
           min='-1500'
@@ -180,15 +180,15 @@
         />
       </label>
     </div>
-    <div class='transform-rule-stage'>
-      <h2 class='transform-rule-stage-label'>Transform Scale</h2>
+    <div class='experiment__stage'>
+      <h2 class='experiment__stage__label'>Transform Scale</h2>
       <img
-        class='transform-rule-img-reference'
+        class='experiment__stage__img-reference'
         src='img/rio.jpg'
         alt='Rio de Janeiro'
       />
       <img
-        class='transform-rule-img-transformed'
+        class='experiment__stage__img-transformed'
         src='img/rio.jpg'
         alt='Rio de Janeiro'
       />
