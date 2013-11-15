@@ -2,5 +2,6 @@
   "box-model": false,
   "box-sizing": false,
   "universal-selector": false,
-  "outline-none": false
+  "outline-none": false,
+  "adjoining-classes": false
 }
