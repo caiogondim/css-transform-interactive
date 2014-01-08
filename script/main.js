@@ -42,7 +42,7 @@ var main = {};
     $('#translate .experiment__code__rule-value-translate-y').html(translateY)
 
     $('#translate .experiment__stage__img-transformed').css(
-      '-webkit-transform',
+      'transform',
       'translate(' + translateX + 'px, ' + translateY + 'px)'
     )
   }
@@ -57,7 +57,7 @@ var main = {};
     $('#scale .experiment__code__rule-value-scale-y').html(scaleY)
 
     $('#scale .experiment__stage__img-transformed').css(
-      '-webkit-transform',
+      'transform',
       'scale(' + scaleX + ', ' + scaleY + ')'
     )
   }
@@ -68,7 +68,7 @@ var main = {};
     $('#rotate .experiment__code__rule-value-rotation').html(rotation)
 
     $('#rotate .experiment__stage__img-transformed').css(
-      '-webkit-transform',
+      'transform',
       'rotate(' + rotation + 'deg)'
     )
   }
@@ -83,7 +83,7 @@ var main = {};
     $('#skew .experiment__code__rule-value-skew-y').html(skewY + 'deg')
 
     $('#skew .experiment__stage__img-transformed').css(
-      '-webkit-transform',
+      'transform',
       'skew(' + skewX + 'deg, ' + skewY + 'deg)'
     )
   }

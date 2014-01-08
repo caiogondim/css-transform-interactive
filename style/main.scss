@@ -6,8 +6,21 @@
 * {
   margin: 0;
   padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+  font-family:
+    'HelveticaNeueLight',
+    'HelveticaNeue-Light',
+    'Helvetica Neue Light',
+    'HelveticaNeue',
+    'Helvetica Neue',
+    'TeXGyreHerosRegular',
+    'Helvetica',
+    'Tahoma',
+    'Geneva',
+    'Arial',
+    sans-serif;
 }
 
 @media (max-width: 2700px) and (min-width: 700px) {
