@@ -1,3 +1,5 @@
+@import 'mixins/grayscale';
+
 .experiment__stage {
   height: 700px;
   width: 400px;
@@ -22,7 +24,8 @@
   left: 75px;
   position: absolute;
   opacity: 0.8;
-  -webkit-filter: grayscale(100%);
+  // -webkit-filter: grayscale(100%);
+  @include grayscale();
 }
 
 .experiment__stage__img-transformed {
